@@ -8,4 +8,5 @@ before_install:
   - pip install coveralls
 script:
   - py.test Tests.py --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report term-missing
-after_install: coveralls
+after_install: 
+  - coveralls
