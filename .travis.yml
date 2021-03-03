@@ -9,5 +9,6 @@ before_install:
   - pip install coveralls
 script:
   - coverage run -m pytest Tests.py
+  - coverage report -m
 after_install: 
   - coveralls
