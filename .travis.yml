@@ -7,6 +7,5 @@ before_install:
   - pip install -U pytest
   - pip install coveralls
 script:
-  - pytest Tests.py
-  - coverage run CardValidity.py Tests.py
+  - py.test Tests.py --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report term-missing
 after_install: coveralls
