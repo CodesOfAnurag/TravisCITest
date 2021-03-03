@@ -8,5 +8,5 @@ before_install:
   - pip install coveralls
 script:
   - pytest Tests.py
-  - coverage run --source=home CardValidity.py Tests.py home
+  - coverage run CardValidity.py Tests.py
 after_install: coveralls
