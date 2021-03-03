@@ -5,6 +5,7 @@ before_install:
   - python --version
   - pip install -U pip
   - pip install -U pytest
+  - pip install coverage
   - pip install coveralls
 script:
   - coverage rum pytest Tests.py
