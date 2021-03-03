@@ -7,6 +7,6 @@ before_install:
   - pip install -U pytest
   - pip install coveralls
 script:
-  - pytest Tests.py
+  - coverage rum pytest Tests.py
 after_install: 
   - coveralls
